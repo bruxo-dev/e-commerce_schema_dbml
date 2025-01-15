@@ -6,7 +6,7 @@ The project defines a relational database schema for managing entities such as s
 
 ## Objective
 The goal of this project is to refine the presented model by incorporating the following new features:
-- **Corporate and PF Client:** An account can be either Corporate or PF (Personal), but cannot contain both types of information simultaneously.
+- **CNPJ and CPF Client:** An account can be either CNPJ (Corporate) or CPF (Personal), but cannot contain both types of information simultaneously.
 - **Payment:** Supports multiple payment methods for a single transaction.
 - **Delivery:** Includes status and tracking code for effective shipment management.
 
@@ -14,7 +14,7 @@ The goal of this project is to refine the presented model by incorporating the f
 The database schema includes the following key entities:
 - **Fornecedor (Supplier):** Stores information about suppliers, including their unique identification (CNPJ).
 - **Produto (Product):** Represents products with details like category, description, and value.
-- **Cliente (Customer):** Contains customer details such as identification, address, and type (individual or corporate).
+- **Cliente (Customer):** Contains customer details such as identification, address, and type (CPF or CNPJ).
 - **Pedido (Order):** Tracks orders placed by customers, including status and associated shipping costs.
 - **Pagamento (Payment):** Links orders to their respective payments and supports multiple payment methods.
 - **Entrega (Delivery):** Manages order deliveries with tracking information and current status.
